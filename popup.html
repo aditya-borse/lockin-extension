@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>LockIn</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+
+<body>
+    <h1>LockIn</h1>
+    <div class="switch-container">
+        <label class="switch">
+            <input type="checkbox" id="blockerEnabled">
+            <span class="slider round"></span>
+        </label>
+        <span>Enable Blocker</span>
+    </div>
+
+    <label for="blockedSites">Blocked Sites (one domain per line):</label>
+    <p class="input-hint">Enter domains only (e.g., example.com), without http:// or https://.</p>
+    <textarea id="blockedSites" rows="10"></textarea>
+
+    <button id="saveButton">Save</button>
+    <p id="status" class="status"></p>
+
+    <script src="popup.js"></script>
+</body>
+
+</html>
